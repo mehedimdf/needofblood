@@ -1,3 +1,4 @@
+/*
 // ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
@@ -103,7 +104,8 @@ class _SignUpState extends State<SignUp> {
                         hintText: "Enter Your Password",
                       ),
                     ),
-                    /*SizedBox(height: 20,),
+                    */
+/*SizedBox(height: 20,),
                     TextField(
                       decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
@@ -121,7 +123,8 @@ class _SignUpState extends State<SignUp> {
                         label: Text("Confirm Password"),
                         hintText: "Enter Your Password",
                       ),
-                    ),*/
+                    ),*//*
+
                     Column(
                       children: [
                         Row(
@@ -146,7 +149,8 @@ class _SignUpState extends State<SignUp> {
                         ),
                       ],
                     ),
-                    /*Padding(
+                    */
+/*Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -158,7 +162,8 @@ class _SignUpState extends State<SignUp> {
                           },child: Text("Sign In", style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,),)),
                         ],
                       ),
-                    ),*/
+                    ),*//*
+
                   ],
                 ),
                 ),
@@ -191,3 +196,4 @@ class _SignUpState extends State<SignUp> {
     );
   }
 }
+*/

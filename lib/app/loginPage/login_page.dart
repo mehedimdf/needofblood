@@ -1,3 +1,4 @@
+/*
 // ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
@@ -134,3 +135,4 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+*/

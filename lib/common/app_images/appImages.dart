@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 //OnBoarding
 class AppImages{
@@ -48,4 +49,4 @@ class AppImages{
   static const fb="assets/icons/facebook.png";
   static const linkedin="assets/icons/linkedin.png";
 
-}
+}*/

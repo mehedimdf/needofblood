@@ -1,3 +1,4 @@
+/*
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
@@ -76,14 +77,15 @@ class GraphChartList extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: AppColros.white,
                         borderRadius: BorderRadius.circular(20),
-                       /* boxShadow: const [
+ boxShadow: const [
                           BoxShadow(
                             offset: Offset(1.0, 1.0),
                             spreadRadius: 1.0,
                             blurRadius: 2.0,
                             color: AppColros.greywhite,
                           ),
-                        ]*/
+                        ]
+
                     ),
                     child: Image(image: AssetImage(AppImages.slider4)),
                   ),
@@ -257,3 +259,4 @@ class GraphChartList extends StatelessWidget {
     );
   }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
@@ -19,14 +20,16 @@ class CustomAcceptWidget extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
-              /*  boxShadow: [
+              */
+/*  boxShadow: [
                   BoxShadow(
                       offset: Offset(1.0, 1.0),
                       spreadRadius: 4.0,
                       blurRadius: 4.0,
                       color: AppColros.greywhite
                   ),
-                ]*/
+                ]*//*
+
             ),
             child: Padding(
               padding: const EdgeInsets.only(top: 10.0),
@@ -134,3 +137,4 @@ class CustomAcceptWidget extends StatelessWidget {
     );
   }
 }
+*/

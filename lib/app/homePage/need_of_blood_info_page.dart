@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:need_of_blood/common/app_images/appImages.dart';
 import '../../common/app_colors/appColors.dart';
@@ -58,3 +59,4 @@ class NeedOfBloodInfoPage extends StatelessWidget {
     );
   }
 }
+*/

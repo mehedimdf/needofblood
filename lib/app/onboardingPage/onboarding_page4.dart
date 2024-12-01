@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:need_of_blood/app/loginPage/login_page.dart';
 import 'package:need_of_blood/app/loginPage/sing_in_up.dart';
@@ -50,3 +51,4 @@ class OnboardingPage4 extends StatelessWidget {
     );
   }
 }
+*/

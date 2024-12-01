@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:need_of_blood/app/homePage/user_profile_page.dart';
@@ -127,7 +128,8 @@ class _DonateRequestPageState extends State<DonateRequestPage> {
                     const SizedBox(
                       height: 10,
                     ),
-                   /* const CustomText(
+                   */
+/* const CustomText(
                         text: "Location",
                         color: AppColros.white,
                         fontsize: 18,
@@ -164,7 +166,8 @@ class _DonateRequestPageState extends State<DonateRequestPage> {
                     //
                     const SizedBox(
                       height: 20,
-                    ),*/
+                    ),*//*
+
                     Center(
                       child: Container(
                         height: 40,
@@ -235,3 +238,4 @@ class _DonateRequestPageState extends State<DonateRequestPage> {
 
   }
 }
+*/

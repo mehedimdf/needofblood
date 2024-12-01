@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
@@ -39,15 +40,19 @@ class MyProfilePage extends StatelessWidget {
                             height: 130,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(70),
-                              /*border:
-                                  Border.all(width: 5, color: AppColros.white),*/
-                              /*boxShadow: [
+                              */
+/*border:
+                                  Border.all(width: 5, color: AppColros.white),*//*
+
+                              */
+/*boxShadow: [
                                 BoxShadow(
                                   spreadRadius: 2,
                                   blurRadius: 10,
                                   color: Colors.black.withOpacity(0.1),
                                 ),
-                              ],*/
+                              ],*//*
+
                             ),
                             child: const Image(
                               image: AssetImage(AppImages.man),
@@ -328,3 +333,4 @@ class MyProfilePage extends StatelessWidget {
     );
   }
 }
+*/

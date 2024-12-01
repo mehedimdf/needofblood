@@ -1,3 +1,4 @@
+/*
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
@@ -248,10 +249,12 @@ class _DonnerAccountPageState extends State<DonnerAccountPage> {
                       fontweight: FontWeight.w800),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
-                    /*decoration: BoxDecoration(
+                    */
+/*decoration: BoxDecoration(
                       border: Border.all(color: AppColros.grey, width: 1),
                       borderRadius: BorderRadius.circular(10),
-                    ),*/
+                    ),*//*
+
                     child: DropdownButton<String>(
                       hint: const Text("Select Gender"),
                       borderRadius: BorderRadius.circular(20),
@@ -293,10 +296,12 @@ class _DonnerAccountPageState extends State<DonnerAccountPage> {
                       fontweight: FontWeight.w800),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
-                    /*decoration: BoxDecoration(
+                    */
+/*decoration: BoxDecoration(
                       border: Border.all(color: AppColros.grey, width: 1),
                       borderRadius: BorderRadius.circular(10),
-                    ),*/
+                    ),*//*
+
                     child: DropdownButton<String>(
                       hint: const Text("Choose Your Blood"),
                       borderRadius: BorderRadius.circular(20),
@@ -338,10 +343,12 @@ class _DonnerAccountPageState extends State<DonnerAccountPage> {
                       fontweight: FontWeight.w800),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
-                    /*decoration: BoxDecoration(
+                    */
+/*decoration: BoxDecoration(
                       border: Border.all(color: AppColros.grey, width: 1),
                       borderRadius: BorderRadius.circular(10),
-                    ),*/
+                    ),*//*
+
                     child: DropdownButton<String>(
                       hint: const Text("Select Division"),
                       borderRadius: BorderRadius.circular(20),
@@ -383,10 +390,12 @@ class _DonnerAccountPageState extends State<DonnerAccountPage> {
                       fontweight: FontWeight.w800),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
-                    /*decoration: BoxDecoration(
+                    */
+/*decoration: BoxDecoration(
                       border: Border.all(color: AppColros.grey, width: 1),
                       borderRadius: BorderRadius.circular(10),
-                    ),*/
+                    ),*//*
+
                     child: DropdownButton<String>(
                       hint: const Text("Selecte Districts"),
                       borderRadius: BorderRadius.circular(20),
@@ -471,3 +480,4 @@ class _DonnerAccountPageState extends State<DonnerAccountPage> {
     );
   }
 }
+*/

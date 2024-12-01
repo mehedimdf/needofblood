@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
@@ -332,7 +333,8 @@ class UserProfilePage extends StatelessWidget {
           ],
         ),
       ),
-    /*  bottomNavigationBar: Padding(
+    */
+/*  bottomNavigationBar: Padding(
         padding:
             const EdgeInsets.only(left: 80, right: 80, bottom: 30, top: 20),
         child: Container(
@@ -347,7 +349,8 @@ class UserProfilePage extends StatelessWidget {
             size: 40,
           ),
         ),
-      ),*/
+      ),*//*
+
 
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 50, right: 50, bottom: 30, top: 20),
@@ -357,14 +360,16 @@ class UserProfilePage extends StatelessWidget {
           decoration: BoxDecoration(
             color: AppColros.white,
               borderRadius: BorderRadius.circular(15),
-             /* boxShadow:const [
+             */
+/* boxShadow:const [
                 BoxShadow(
                     offset: Offset(1.0, 1.0),
                     spreadRadius: 4.0,
                     blurRadius: 4.0,
                     color: AppColros.greywhite
                 )
-              ]*/
+              ]*//*
+
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -399,3 +404,4 @@ class UserProfilePage extends StatelessWidget {
     );
   }
 }
+*/

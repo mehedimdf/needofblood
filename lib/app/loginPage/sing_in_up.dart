@@ -1,3 +1,4 @@
+/*
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
@@ -86,3 +87,4 @@ class SingInUp extends StatelessWidget {
     );
   }
 }
+*/

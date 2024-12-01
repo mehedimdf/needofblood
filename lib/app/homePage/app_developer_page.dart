@@ -1,9 +1,11 @@
+/*
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
 import 'package:need_of_blood/common/app_images/appImages.dart';
 import 'package:need_of_blood/common/custom_text/custom_text.dart';
+import 'package:need_of_blood/utils/app_images/app_images.dart';
 
 class AppDeveloperPage extends StatelessWidget {
   const AppDeveloperPage({super.key});
@@ -20,11 +22,13 @@ class AppDeveloperPage extends StatelessWidget {
               height: 550,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-               /* borderRadius: BorderRadius.only(
+               */
+/* borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(75),
-                    bottomLeft: Radius.circular(75)),*/
+                    bottomLeft: Radius.circular(75)),*//*
+
                 image: DecorationImage(
-                    image: AssetImage(AppImages.appcover),
+                    image: AssetImage(AppImages.),
                     fit: BoxFit.cover,
                     opacity: 0.8),
               ),
@@ -350,3 +354,4 @@ class AppDeveloperPage extends StatelessWidget {
     ));
   }
 }
+*/

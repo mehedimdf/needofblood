@@ -1,3 +1,4 @@
+/*
 // ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
 import 'package:flutter/material.dart';
@@ -140,3 +141,4 @@ class _VerifyPageState extends State<VerifyPage> {
     );
   }
 }
+*/

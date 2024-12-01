@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 
 class AppStrings {
@@ -6,3 +7,4 @@ class AppStrings {
   static const notification="Notification";
   static const more="More";
 }
+*/

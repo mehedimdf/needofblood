@@ -1,3 +1,4 @@
+/*
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:need_of_blood/app/homePage/home_page.dart';
@@ -58,3 +59,4 @@ class _SplashScreenState extends State<SplashScreen> {
     ));
   }
 }
+*/

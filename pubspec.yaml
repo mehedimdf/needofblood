@@ -43,6 +43,26 @@ dependencies:
   pie_chart: ^5.4.0
   velocity_x: ^4.2.1
   pin_code_fields: ^8.0.1
+  flutter_screenutil: ^5.9.3
+  fluttertoast: ^8.2.6
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.1
+  flutter_spinkit: ^5.2.1
+  device_preview: ^1.2.0
+  image_picker: ^1.1.2
+  dotted_border: ^2.1.0
+  http_parser: ^4.0.2
+  http: ^1.2.2
+  mime: ^1.0.5
+  lottie: ^3.1.2
+  flutter_onboarding_slider: ^1.0.11
+  curved_navigation_bar: ^1.0.6
+  table_calendar: ^3.1.2
+  fl_chart: ^0.55.2
+  local_auth: ^2.3.0
+  shared_preferences: ^2.3.2
+  app_settings: ^5.1.1
 
 dev_dependencies:
   flutter_test:
@@ -68,10 +88,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/
-    - assets/images/
-    - assets/images/slider_images/
     - assets/icons/
+    - assets/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

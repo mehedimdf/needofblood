@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 class AppColros {
   static const maincolor = Color(0xffe11e37);
-  static const maincolor2 = Color(0xffd60033);
+  static const maincolor2 = Color(0xffdf4056);
+  static const l1 = Color(0xfff69696);
+  static const l2 = Color(0xffE01E37);
   static const whitelight = Color(0xfffffff5);
   static const splach_bg = Color(0xff9C9291);
   static const green = Color(0xff0D7517);

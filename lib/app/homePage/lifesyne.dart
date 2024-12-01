@@ -1,14 +1,14 @@
+/*
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, sort_child_properties_last
 import 'package:flutter/material.dart';
-import 'package:need_of_blood/app/homePage/account_page.dart';
-import 'package:need_of_blood/app/homePage/donate_request_page.dart';
 import 'package:need_of_blood/app/homePage/emtyscreen.dart';
-import 'package:need_of_blood/app/homePage/home_page.dart';
-import 'package:need_of_blood/app/homePage/notification_page.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
-import 'package:need_of_blood/common/app_images/appImages.dart';
+import 'package:need_of_blood/utils/app_icons/app_icons.dart';
+import 'package:need_of_blood/view/screens/home_screen/home_screen.dart';
 
 class CustomNavbar extends StatefulWidget {
-  const CustomNavbar({super.key});
+  final  int currentIndex;
+  const CustomNavbar({super.key, required this.currentIndex});
 
   @override
   State<CustomNavbar> createState() => _CustomNavbarState();
@@ -18,10 +18,10 @@ class _CustomNavbarState extends State<CustomNavbar> {
 
   int currentTab=0;
   final List<Widget> screens = [
-    Emtyscreen(),
-    DonateRequestPage(),
-    NotificationPage(),
-    AccountPage(),
+    HomeScreen(),
+    HomeScreen(),
+    HomeScreen(),
+    HomeScreen(),
   ];
 
   final PageStorageBucket bucket = PageStorageBucket();
@@ -35,7 +35,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppColros.white,
         shape: CircleBorder(),
-        child: Image(image: AssetImage(AppImages.blood_donation)),
+        child: Image(image: AssetImage(AppIcons.bloodDonation)),
           onPressed: (){}),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
@@ -55,7 +55,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
                     MaterialButton(
                         onPressed: (){
                           setState(() {
-                            currentScreen=Emtyscreen();
+                            currentScreen=HomeScreen();
                             currentTab=0;
                           });
                         },
@@ -72,7 +72,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
                     MaterialButton(
                       onPressed: (){
                         setState(() {
-                          currentScreen=NotificationPage();
+                          currentScreen=HomeScreen();
                           currentTab=1;
                         });
                       },
@@ -94,7 +94,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
                     MaterialButton(
                       onPressed: (){
                         setState(() {
-                          currentScreen=NotificationPage();
+                          currentScreen=HomeScreen();
                           currentTab=2;
                         });
                       },
@@ -111,7 +111,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
                     MaterialButton(
                       onPressed: (){
                         setState(() {
-                          currentScreen=NotificationPage();
+                          currentScreen=HomeScreen();
                           currentTab=3;
                         });
                       },
@@ -134,3 +134,4 @@ class _CustomNavbarState extends State<CustomNavbar> {
     );
   }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
 class CustomText extends StatelessWidget {
@@ -13,3 +14,4 @@ class CustomText extends StatelessWidget {
     return Text(text,style: TextStyle(fontSize:fontsize??12, fontWeight: fontweight,color: color,fontFamily: fontfamily),);
   }
 }
+*/

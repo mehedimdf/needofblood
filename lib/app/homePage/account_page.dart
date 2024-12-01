@@ -1,9 +1,10 @@
+/*
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:need_of_blood/app/homePage/app_developer_page.dart';
 import 'package:need_of_blood/app/homePage/edit_profile.dart';
-import 'package:need_of_blood/app/homePage/my_profile_page.dart';
+import 'package:need_of_blood/app/homePage/personal_profile_screen.dart';
 import 'package:need_of_blood/app/homePage/need_of_blood_info_page.dart';
 import 'package:need_of_blood/app/homePage/user_profile_page.dart';
 import 'package:need_of_blood/app/homePage/change_password_page.dart';
@@ -343,3 +344,4 @@ class _AccountPageState extends State<AccountPage> {
     );
   }
 }
+*/

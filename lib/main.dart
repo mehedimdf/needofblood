@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:need_of_blood/app/homePage/home_page.dart';
-import 'package:need_of_blood/app/homePage/lifesyne.dart';
-import 'package:need_of_blood/app/splashScreen/splash.dart';
-import 'package:need_of_blood/common/app_colors/appColors.dart';
-import 'package:need_of_blood/theme/themes_colors_system.dart';
+import 'package:need_of_blood/core/app_routes/app_routes.dart';
+import 'package:need_of_blood/utils/app_colors/app_colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,14 +14,27 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      color:AppColros.white2,
-      debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.system,
-      theme: MyThemes.lightTheme,
-      darkTheme: MyThemes.darkTheme,
-      title: 'Flutter Demo',
-      home: CustomNavbar(),
+    return ScreenUtilInit(
+      minTextAdapt: true,
+      splitScreenMode: true,
+      designSize: const Size(375, 812),
+      child: GetMaterialApp(
+        theme: ThemeData(
+            scaffoldBackgroundColor: AppColors.white2,
+            appBarTheme: const AppBarTheme(
+              //surfaceTintColor: AppColors.brinkPink,
+                toolbarHeight: 65,
+                elevation: 0,
+                centerTitle: true,
+                backgroundColor: AppColors.white,
+                iconTheme: IconThemeData(color: AppColors.white))),
+        debugShowCheckedModeBanner: false,
+        defaultTransition: Transition.fadeIn,
+        transitionDuration: const Duration(milliseconds: 200),
+        initialRoute: AppRoutes.homeScreen,
+        navigatorKey: Get.key,
+        getPages: AppRoutes.routes,
+      ),
     );
   }
 }

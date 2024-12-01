@@ -1,3 +1,4 @@
+/*
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -26,11 +27,12 @@ final List<String> imgList = [
   AppImages.slider3,
 ];
 
-/*late List<Widget> _pages;*/
+late List<Widget> _pages;
+
 
 class _HomePageState extends State<HomePage> {
   List<bool> isSelected = List.generate(6, (index) => false);
-/*@override
+@override
   void initState() {
     // TODO: implement initState
     super.initState();
@@ -39,7 +41,8 @@ class _HomePageState extends State<HomePage> {
         (index)=>ImagePlaceholder(
           imagepath: imagePaths[index],
         ));
-  }*/
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -130,13 +133,14 @@ class _HomePageState extends State<HomePage> {
                     decoration: BoxDecoration(
                         color: AppColros.white,
                         borderRadius: BorderRadius.circular(20),
-                       /* boxShadow: const [
+ boxShadow: const [
                           BoxShadow(
                               offset: Offset(1.0, 1.0),
                               spreadRadius: 4.0,
                               blurRadius: 4.0,
                               color: AppColros.greywhite)
-                        ]*/
+                        ]
+
                     ),
                     child: InkWell(
                       onTap: () {
@@ -176,13 +180,14 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                           color: AppColros.white,
                           borderRadius: BorderRadius.circular(20),
-                         /* boxShadow: const [
+ boxShadow: const [
                             BoxShadow(
                                 offset: Offset(1.0, 1.0),
                                 spreadRadius: 4.0,
                                 blurRadius: 4.0,
                                 color: AppColros.greywhite)
-                          ]*/),
+                          ]
+),
                       child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -214,13 +219,14 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                           color: AppColros.white,
                           borderRadius: BorderRadius.circular(20),
-                         /* boxShadow: const [
+ boxShadow: const [
                             BoxShadow(
                                 offset: Offset(1.0, 1.0),
                                 spreadRadius: 4.0,
                                 blurRadius: 4.0,
                                 color: AppColros.greywhite)
-                          ]*/),
+                          ]
+),
                       child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -297,3 +303,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+*/
