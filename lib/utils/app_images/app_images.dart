@@ -13,6 +13,9 @@ class AppImages {
   static const String man = "$basePath/man.png";
   static const String slider1 = "$basePath/slider1.jpg";
   static const String sliderimage1 = "$basePath/sliderimage1.jpg";
+  static const String appcover = "$basePath/appcover.png";
+  static const String manCover = "$basePath/manCover.png";
+  static const String bannerImage = "$basePath/bannerImage.png";
 
 
 

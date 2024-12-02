@@ -7,8 +7,8 @@ import 'package:need_of_blood/view/components/custom_from_card/custom_from_card.
 import 'package:need_of_blood/view/components/custom_royel_appbar/custom_royel_appbar.dart';
 import 'package:need_of_blood/view/components/custom_text/custom_text.dart';
 
-class ChangePasswordPage extends StatelessWidget {
-  const ChangePasswordPage({super.key});
+class ChangePasswordScreen extends StatelessWidget {
+  const ChangePasswordScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

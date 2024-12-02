@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:need_of_blood/common/app_colors/appColors.dart';
 import 'package:need_of_blood/utils/app_colors/app_colors.dart';
 import 'package:need_of_blood/view/components/custom_text/custom_text.dart';
 class CustomGraphCard extends StatelessWidget {

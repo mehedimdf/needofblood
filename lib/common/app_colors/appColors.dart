@@ -45,6 +45,7 @@ class AppColros {
   static const oo = Color(0xfff8585b);
   static const ab = Color(0xff63e7a1);
   static const abAb = Color(0xfff88585);
+  static const redColor = Color(0xffdf4056);
 
 
 

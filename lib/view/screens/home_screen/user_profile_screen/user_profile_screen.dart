@@ -1,14 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
-import 'package:need_of_blood/common/app_images/appImages.dart';
-import 'package:need_of_blood/common/custom_text/custom_text.dart';
 import 'package:need_of_blood/utils/app_icons/app_icons.dart';
 import 'package:need_of_blood/utils/app_images/app_images.dart';
 import 'package:need_of_blood/utils/app_strings/app_strings.dart';
-import 'package:need_of_blood/view/components/custom_button/custom_button.dart';
 import 'package:need_of_blood/view/components/custom_from_card/custom_from_card.dart';
 import 'package:need_of_blood/view/components/custom_image/custom_image.dart';
 import 'package:need_of_blood/view/components/custom_royel_appbar/custom_royel_appbar.dart';

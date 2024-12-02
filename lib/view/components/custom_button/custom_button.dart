@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:need_of_blood/common/app_colors/appColors.dart';
 
 import '../../../utils/app_colors/app_colors.dart';
 import '../custom_text/custom_text.dart';
@@ -46,6 +49,10 @@ class CustomButton extends StatelessWidget {
         height: height,
         width: width,
         decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: [AppColros.l1, AppColros.redColor],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomCenter),
           border: isBorder
               ? Border.all(color: textColor, width: borderWidth ?? .05)
               : null,

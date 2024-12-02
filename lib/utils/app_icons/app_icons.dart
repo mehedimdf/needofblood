@@ -20,6 +20,15 @@ class AppIcons {
   static const String graphIcon = "$basePath/graphIcon.svg";
   static const String requestIcon = "$basePath/requestIcon.svg";
   static const String notification = "$basePath/notification.svg";
+  static const String fb = "$basePath/fb.png";
+  static const String google = "$basePath/google.png";
+  static const String linkedin = "$basePath/linkedin.png";
+  static const String education = "$basePath/education.svg";
+  static const String lineIcon = "$basePath/lineIcon.svg";
+  static const String global = "$basePath/global.svg";
+  static const String malePerson = "$basePath/malePerson.svg";
+  static const String personMe = "$basePath/personMe.svg";
+  static const String listView = "$basePath/listView.svg";
 
 
 }

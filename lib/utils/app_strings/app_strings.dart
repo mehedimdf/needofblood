@@ -19,6 +19,10 @@ class   AppStrings {
   static const String userProfile = "User Profile";
   static const String notification = "Notification";
   static const String accountInfo = "Account Info";
+  static const String changePassword = "Change Password";
+  static const String needOfBloodInfo = "Need of Blood Info";
+  static const String createDonateInfo = "Create Donate Info";
+  static const String viewAllDonors = "View All Donors";
 
 
 }

@@ -50,7 +50,7 @@ class CustomFormCard extends StatelessWidget {
       children: [
         CustomText(
           text: title,
-          color: titleColor ?? AppColors.black,
+          color: titleColor ?? AppColors.greylabel,
           fontWeight: FontWeight.w600,
           fontSize: fontSize ?? 16.w,
           bottom: 8.h,

@@ -3,14 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:need_of_blood/common/app_colors/appColors.dart';
+import 'package:need_of_blood/core/app_routes/app_routes.dart';
 import 'package:need_of_blood/utils/app_icons/app_icons.dart';
 import 'package:need_of_blood/utils/app_strings/app_strings.dart';
 import 'package:need_of_blood/view/components/custom_image/custom_image.dart';
 import 'package:need_of_blood/view/components/custom_text/custom_text.dart';
 import 'package:need_of_blood/view/screens/home_screen/account_info_screen/account_info_screen.dart';
+import 'package:need_of_blood/view/screens/home_screen/all_view_donner_screen/all_view_donner_screen.dart';
 import 'package:need_of_blood/view/screens/home_screen/home_screen.dart';
 import 'package:need_of_blood/view/screens/home_screen/notification_screen/notification_screen.dart';
-import 'package:need_of_blood/view/screens/home_screen/personal_profile_screen/personal_profile_screen.dart';
 import '../../../utils/app_colors/app_colors.dart';
 
 class BlackDaimonNavbar extends StatefulWidget {
@@ -27,13 +29,13 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
 
   final List<String> selectedIcon = [
     AppIcons.homeSeleted,
-    AppIcons.homeUnSeleted,
+    AppIcons.listView,
     AppIcons.notification,
     AppIcons.profileMenuSeleted,
   ];
   final List<String> unselectedIcon = [
-    AppIcons.homeUnSeleted,
-    AppIcons.homeUnSeleted,
+    AppIcons.homeSeleted,
+    AppIcons.listView,
     AppIcons.notification,
     AppIcons.profileMenuSeleted,
   ];
@@ -60,8 +62,15 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
           height: 80.h,
           width: MediaQuery.sizeOf(context).width,
           decoration: BoxDecoration(
-            color: Color(0xffdf4056),
-          ),
+              // color: Color(0xffdf4056),
+              gradient: LinearGradient(
+                  colors: [AppColros.l1, AppColros.redColor],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter),
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(40.r),
+                topLeft: Radius.circular(40.r),
+              )),
           child: Padding(
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: Padding(
@@ -71,7 +80,7 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: List.generate(
                   selectedIcon.length,
-                      (index) => Row(
+                  (index) => Row(
                     children: [
                       InkWell(
                         onTap: () => onTap(index),
@@ -80,39 +89,40 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
                           children: [
                             index == bottomNavIndex
                                 ? Card(
-                              elevation: 100,
-                              shadowColor: AppColors.white,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(100.r),
-                              ),
-                              color: Colors.transparent,
-                              child: Column(
-                                children: [
-                                  SvgPicture.asset(
-                                    selectedIcon[index],
+                                    elevation: 100,
+                                    shadowColor: AppColors.white,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(100.r),
+                                    ),
+                                    color: Colors.transparent,
+                                    child: Column(
+                                      children: [
+                                        SvgPicture.asset(
+                                          selectedIcon[index],
+                                          height: 30.h,
+                                          width: 30.w,
+                                          //color: Color(0xff1c274c),
+                                        ),
+                                        // SizedBox(height: 4.h),
+                                        index == bottomNavIndex
+                                            ? const SizedBox()
+                                            : CustomText(
+                                                text: userNavText[index],
+                                                color: AppColors.primary,
+                                                fontWeight: FontWeight.w600,
+                                                fontSize: 14.w,
+                                              ),
+                                      ],
+                                    ),
+                                  )
+                                : SvgPicture.asset(
+                                    unselectedIcon[index],
                                     height: 30.h,
                                     width: 30.w,
-                                    //color: Color(0xff1c274c),
+                                    color: AppColors.white,
                                   ),
-                                 // SizedBox(height: 4.h),
-                                  index == bottomNavIndex
-                                      ? const SizedBox()
-                                      : CustomText(
-                                    text: userNavText[index],
-                                    color: AppColors.primary,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 14.w,
-                                  ),
-                                ],
-                              ),
-                            )
-                                : SvgPicture.asset(
-                              unselectedIcon[index],
-                              height: 30.h,
-                              width: 30.w,
-                             color: AppColors.white,
-                            ),
-                           /* SizedBox(height: 4.h),
+                            /* SizedBox(height: 4.h),
                             index == bottomNavIndex
                                 ? const SizedBox()
                                 : CustomText(
@@ -121,11 +131,10 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
                               fontWeight: FontWeight.w600,
                               fontSize: 14.w,
                             ),*/
-
                           ],
                         ),
                       ),
-                      index == 1? SizedBox(width: 60.w): SizedBox()
+                      index == 1 ? SizedBox(width: 60.w) : SizedBox()
                     ],
                   ),
                 ),
@@ -143,7 +152,7 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
                 children: [
                   GestureDetector(
                     onTap: () {
-                     // Get.toNamed(AppRoutes.meetUpListScreen);
+                      // Get.toNamed(AppRoutes.meetUpListScreen);
                     },
                     child: Container(
                       // padding: EdgeInsets.symmetric(horizontal: 20.w),
@@ -153,14 +162,23 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
                           color: AppColors.white,
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: AppColors.white2,
+                            color: AppColors.white,
                             width: 6,
-                          )
-                      ),
+                          )),
                       child: Padding(
-                        padding: const EdgeInsets.all(0.0),
-                        child: FloatingActionButton(onPressed: (){},backgroundColor: AppColors.white,shape: CircleBorder(),child: CustomImage(imageSrc: AppIcons.bloodDonation, height: 40,width: 40,),)
-                      ),
+                          padding: const EdgeInsets.all(0.0),
+                          child: FloatingActionButton(
+                            onPressed: () {
+                              Get.toNamed(AppRoutes.bannerScreenOne);
+                            },
+                            backgroundColor: AppColros.white,
+                            shape: CircleBorder(),
+                            child: CustomImage(
+                              imageSrc: AppIcons.bloodDonation,
+                              height: 40,
+                              width: 40,
+                            ),
+                          )),
                     ),
                   ),
                 ],
@@ -179,10 +197,10 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
           Get.offAll(() => HomeScreen());
           break;
         case 1:
-        // Get.to(() => PersonalProfileScreen());
+           Get.to(() => AllViewDonnerScreen());
           break;
         case 2:
-         Get.to(() => NotificationScreen());
+          Get.to(() => NotificationScreen());
           break;
         case 3:
           Get.to(() => AccountInfoScreen());

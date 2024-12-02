@@ -1,10 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
-import 'package:need_of_blood/common/app_images/appImages.dart';
-import 'package:need_of_blood/common/custom_text/custom_text.dart';
 import 'package:need_of_blood/utils/app_icons/app_icons.dart';
 import 'package:need_of_blood/utils/app_images/app_images.dart';
 import 'package:need_of_blood/view/components/custom_image/custom_image.dart';
@@ -20,7 +17,7 @@ class CustomDonateRequestWidget extends StatelessWidget {
       padding: const EdgeInsets.only(left: 20, right: 20, bottom: 10, top: 4),
       child: Container(
         padding: EdgeInsets.all(10),
-       // height: 230,
+        // height: 230,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
             color: Colors.white,
@@ -68,9 +65,10 @@ class CustomDonateRequestWidget extends StatelessWidget {
                     Container(
                         height: 1,
                         width: 150,
-                        color: AppColros.grey.withOpacity(0.2)
+                        color: AppColros.grey.withOpacity(0.2)),
+                    SizedBox(
+                      height: 4.h,
                     ),
-                    SizedBox(height: 4.h,),
                     Row(
                       children: [
                         Icon(Icons.location_on_outlined,
@@ -86,7 +84,9 @@ class CustomDonateRequestWidget extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(height: 4.h,),
+                    SizedBox(
+                      height: 4.h,
+                    ),
                     Row(
                       children: [
                         Icon(Icons.bloodtype_outlined,
@@ -102,8 +102,10 @@ class CustomDonateRequestWidget extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(height: 4.h,),
-                   /*  Row(
+                    SizedBox(
+                      height: 4.h,
+                    ),
+                    /*  Row(
             children: [
               Icon(Icons.transgender,
                   size: 15, color: AppColros.maincolor),
@@ -189,7 +191,6 @@ class CustomDonateRequestWidget extends StatelessWidget {
             ),
           ],
         ),
-
       ),
     );
   }
