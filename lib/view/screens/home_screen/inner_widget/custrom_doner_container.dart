@@ -14,12 +14,12 @@ class CustromDonerContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: const EdgeInsets.only(left: 10,top: 10,bottom: 10),
+      padding: const EdgeInsets.all(5),
       child: GestureDetector(
         onTap: onTap,
         child: Container(
         // padding: EdgeInsets.all(15),
-         height: 100.h,
+         height: 110.h,
           width: 110.h,
           decoration: BoxDecoration(
               color: AppColros.white,

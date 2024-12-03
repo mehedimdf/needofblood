@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -34,160 +33,155 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Stack(
-            clipBehavior: Clip.none,
-            children: [
-              CustomImage(
-                imageSrc: AppImages.mainCoverImage,
-                width: MediaQuery.sizeOf(context).width,
-                fit: BoxFit.cover,
-              ),
-              Positioned(
-                  top: 80,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stack(
+              clipBehavior: Clip.none,
+              children: [
+                CustomImage(
+                  imageSrc: AppImages.mainCoverImage,
+                  width: MediaQuery.sizeOf(context).width,
+                  fit: BoxFit.cover,
+                ),
+                Positioned(
+                    top: 80.h,
+                    left: 0,
+                    right: 0,
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 20.w, right: 20.w),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CustomText(
+                                text: "Mehedi Hassan",
+                                fontSize: 22.w,
+                                fontWeight: FontWeight.w900,
+                                color: AppColros.white,
+
+                              ),
+                             Row(
+                               children: [
+                                 Icon(Icons.location_on_outlined,size: 20,color: AppColros.maincolor,),
+                                 CustomText(
+                                   text: "Bogura",
+                                   fontSize: 12.w,
+                                   fontWeight: FontWeight.w500,
+                                   color: AppColros.blacklight,
+                                 ),
+                               ],
+                             )
+                            ],
+                          ),
+                          GestureDetector(
+                            onTap: (){
+                              Get.toNamed(AppRoutes.personalProfileScreen);
+                            },
+                            child: CustomImage(
+                                imageSrc: AppImages.man, height: 55.h, width: 55.w),
+                          ),
+                        ],
+                      ),
+                    )),
+                Positioned(
+                  top: 200.h,
                   left: 0,
                   right: 0,
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: CarouselSlider(
+                    options: CarouselOptions(
+                        autoPlay: true,
+                        initialPage: 0,
+                        aspectRatio: 2.0,
+                        enlargeCenterPage: true,
+                        height: 100.h
+                        //enlargeStrategy: CenterPageEnlargeStrategy.height,
+                        ),
+                    items: List.generate(
+                        imgList.length,
+                        (index) => ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: Image.asset(
+                                imgList[index],
+                                fit: BoxFit.cover,
+                                // height: ,
+                                width: MediaQuery.of(context).size.width,
+                              ),
+                            )),
+                  ),
+                )
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 0, right: 0, top: 50.h),
+              child: Column(
+                children: [
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            CustomText(
-                              text: "Mehedi Hassan",
-                              fontSize: 22,
-                              fontWeight: FontWeight.w900,
-                              color: AppColros.white,
-                            ),
-                           Row(
-                             children: [
-                               Icon(Icons.location_on_outlined,size: 20,color: AppColros.maincolor,),
-                               CustomText(
-                                 text: "Bogura",
-                                 fontSize: 12,
-                                 fontWeight: FontWeight.w500,
-                                 color: AppColros.blacklight,
-                               ),
-                             ],
-                           )
-                          ],
-                        ),
-                        GestureDetector(
+                        CustromDonerContainer(
                           onTap: (){
-                            Get.toNamed(AppRoutes.personalProfileScreen);
+                            Get.toNamed(AppRoutes.findDonorsScreen);
                           },
-                          child: CustomImage(
-                              imageSrc: AppImages.man, height: 40, width: 40),
+                          image: AppIcons.userSearch,
+                          name: AppStrings.findDonors,
+                        ),
+                        CustromDonerContainer(
+                          onTap: (){
+                            Get.toNamed(AppRoutes.donateGraphScreen);
+                          },
+                          image: AppIcons.graphIcon3,
+                          name: AppStrings.donateGraph,
+                        ),
+                        CustromDonerContainer(
+                          onTap: (){
+                           // Get.toNamed(AppRoutes.requestScreen);
+                          },
+                          image: AppIcons.requestIcon,
+                          name: AppStrings.requestBlood,
                         ),
                       ],
                     ),
-                  )),
-              Positioned(
-                top: 200,
-                left: 0,
-                right: 0,
-                child: CarouselSlider(
-                  options: CarouselOptions(
-                      autoPlay: true,
-                      initialPage: 0,
-                      aspectRatio: 2.0,
-                      enlargeCenterPage: true,
-                      height: 100.h
-                      //enlargeStrategy: CenterPageEnlargeStrategy.height,
-                      ),
-                  items: List.generate(
-                      imgList.length,
-                      (index) => ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                            child: Image.asset(
-                              imgList[index],
-                              fit: BoxFit.cover,
-                              // height: ,
-                              width: MediaQuery.of(context).size.width,
-                            ),
-                          )),
-                ),
-              )
-            ],
-          ),
-          Expanded(
-            child: ListView(
-              padding: EdgeInsets.zero,
-              scrollDirection: Axis.vertical,
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(left: 0, right: 0, top: 40),
-                  child: Column(
-                    children: [
-                      SingleChildScrollView(
-                        //scrollDirection: Axis.horizontal,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            CustromDonerContainer(
-                              onTap: (){
-                                Get.toNamed(AppRoutes.findDonorsScreen);
-                              },
-                              image: AppIcons.userSearch,
-                              name: AppStrings.findDonors,
-                            ),
-                            CustromDonerContainer(
-                              onTap: (){
-                                Get.toNamed(AppRoutes.donateGraphScreen);
-                              },
-                              image: AppIcons.graphIcon,
-                              name: AppStrings.donateGraph,
-                            ),
-                            CustromDonerContainer(
-                              onTap: (){
-                               // Get.toNamed(AppRoutes.requestScreen);
-                              },
-                              image: AppIcons.requestIcon,
-                              name: AppStrings.requestBlood,
-                            ),
-                          ],
-                        ),
-                      ),
-            
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20, top: 8),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            CustomText(
-                              text: "Donation Need",
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                              color: AppColros.blacklight,
-                            ),
-                            CustomText(
-                              text: "view all",
-                              fontSize: 16,
-                              fontWeight: FontWeight.w300,
-                              color: AppColros.grey,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10.h,
-                      ),
-                      Column(
-                          children: List.generate(2, (index) {
-                        return CustomListWidget();
-                      }))
-                    ],
                   ),
-                ),
-              ],
+        
+                  Padding(
+                    padding: EdgeInsets.only(left: 20.w, right: 20.w, top: 8.h),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        CustomText(
+                          text: "Recent Donors",
+                          fontSize: 16.w,
+                          fontWeight: FontWeight.w500,
+                          color: AppColros.blacklight,
+                        ),
+                       /* CustomText(
+                          text: "view all",
+                          fontSize: 16.w,
+                          fontWeight: FontWeight.w300,
+                          color: AppColros.grey,
+                        ),*/
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  Column(
+                      children: List.generate(2, (index) {
+                    return CustomListWidget();
+                  }))
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
       bottomNavigationBar: BlackDaimonNavbar(currentIndex: 0),
     );

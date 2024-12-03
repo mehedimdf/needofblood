@@ -99,9 +99,11 @@ class _AccountPageState extends State<AccountInfoScreen> {
                               ),
                               // ================= Rate Us ============================
                               CustomAccountWidget(
-                                icon: Icons.star_rate,
-                                text: "Rate Us",
-                                onTap: () {},
+                                icon: Icons.data_thresholding,
+                                text: "Donate this Organization",
+                                onTap: () {
+                                  Get.toNamed(AppRoutes.donateThisOrgScreen);
+                                },
                               ),
                               // ================= Share App ===========================
                               CustomAccountWidget(

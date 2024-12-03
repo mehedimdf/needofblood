@@ -28,16 +28,16 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
   late int bottomNavIndex;
 
   final List<String> selectedIcon = [
-    AppIcons.homeSeleted,
-    AppIcons.listView,
+    AppIcons.homeU,
+    AppIcons.listIconS,
     AppIcons.notification,
-    AppIcons.profileMenuSeleted,
+    AppIcons.accountPerson,
   ];
   final List<String> unselectedIcon = [
-    AppIcons.homeSeleted,
-    AppIcons.listView,
-    AppIcons.notification,
-    AppIcons.profileMenuSeleted,
+    AppIcons.homeS,
+    AppIcons.listIconU,
+    AppIcons.notifiIconU,
+    AppIcons.accountIocnU,
   ];
 
   final List<String> userNavText = [
@@ -102,7 +102,7 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
                                           selectedIcon[index],
                                           height: 30.h,
                                           width: 30.w,
-                                          //color: Color(0xff1c274c),
+                                          color: AppColros.white,
                                         ),
                                         // SizedBox(height: 4.h),
                                         index == bottomNavIndex
@@ -120,7 +120,8 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
                                     unselectedIcon[index],
                                     height: 30.h,
                                     width: 30.w,
-                                    color: AppColors.white,
+                                    color: AppColros.white2,
+
                                   ),
                             /* SizedBox(height: 4.h),
                             index == bottomNavIndex
@@ -156,13 +157,13 @@ class _UserNavBarState extends State<BlackDaimonNavbar> {
                     },
                     child: Container(
                       // padding: EdgeInsets.symmetric(horizontal: 20.w),
-                      height: 80,
-                      width: 80,
+                      height: 65,
+                      width: 65,
                       decoration: BoxDecoration(
                           color: AppColors.white,
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: AppColors.white,
+                            color: Colors.transparent,
                             width: 6,
                           )),
                       child: Padding(

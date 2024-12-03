@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
 import 'package:need_of_blood/view/components/custom_text/custom_text.dart';
 

@@ -29,6 +29,21 @@ class AppIcons {
   static const String malePerson = "$basePath/malePerson.svg";
   static const String personMe = "$basePath/personMe.svg";
   static const String listView = "$basePath/listView.svg";
+  static const String mainBloodIcon = "$basePath/mainBloodIcon.svg";
+  static const String graphIcon2 = "$basePath/graphIcon2.svg";
+  static const String graphIcon3 = "$basePath/graphIcon3.svg";
+  static const String accountPerson = "$basePath/accountPerson.svg";
+  static const String homeS = "$basePath/homeS.svg";
+  static const String homeU = "$basePath/homeU.svg";
+  static const String listIcon = "$basePath/listIcon.svg";
+  static const String notifiIconU = "$basePath/notifiIconU.svg";
+  static const String accountIocnU = "$basePath/accountIocnU.svg";
+  static const String listIconU = "$basePath/listIconU.svg";
+  static const String listIconS = "$basePath/listIconS.svg";
+  static const String bkashIcon = "$basePath/bkashIcon.png";
+  static const String copyIcon = "$basePath/copyIcon.svg";
+  static const String nagadIcon = "$basePath/nagadIcon.png";
+  static const String rocketIcon = "$basePath/rocketIcon.png";
 
 
 }

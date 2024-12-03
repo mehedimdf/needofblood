@@ -1,11 +1,13 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:get/get.dart';
-import 'package:need_of_blood/app/homePage/edit_profile.dart';
+import 'package:need_of_blood/view/components/custom_nav_bar/custom_navbar_two.dart';
 import 'package:need_of_blood/view/screens/donate_graph_screen/donate_graph_screen.dart';
 import 'package:need_of_blood/view/screens/find_donors_screen/find_donors_screen.dart';
 import 'package:need_of_blood/view/screens/home_screen/account_info_screen/account_info_screen.dart';
 import 'package:need_of_blood/view/screens/home_screen/account_info_screen/app_developer_screen/app_developer_screen.dart';
 import 'package:need_of_blood/view/screens/home_screen/account_info_screen/change_password_screen/change_password_screen.dart';
+import 'package:need_of_blood/view/screens/home_screen/account_info_screen/donate_this_org_screen/donate_this_org_screen.dart';
+import 'package:need_of_blood/view/screens/home_screen/account_info_screen/donate_this_org_screen/payment_screen.dart';
 import 'package:need_of_blood/view/screens/home_screen/account_info_screen/edit_profile_screen/edit_profile.dart';
 import 'package:need_of_blood/view/screens/home_screen/account_info_screen/need_of_blood_screen/need_of_blood_screen.dart';
 import 'package:need_of_blood/view/screens/home_screen/all_view_donner_screen/all_view_donner_screen.dart';
@@ -35,6 +37,9 @@ class AppRoutes {
   static const String bloodDonateAccountScreen = "/BloodDonateAccountScreen";
   static const String bannerScreenOne = "/BannerScreenOne";
   static const String allViewDonnerScreen = "/AllViewDonnerScreen";
+  static const String donateThisOrgScreen = "/DonateThisOrgScreen";
+  static const String paymentScreen = "/PaymentScreen";
+  static const String customNavbarTwo = "/CustomNavbarTwo";
 
 
 
@@ -58,6 +63,9 @@ class AppRoutes {
     GetPage(name: bloodDonateAccountScreen, page: () => BloodDonateAccountScreen()),
     GetPage(name: bannerScreenOne, page: () => BannerScreenOne()),
     GetPage(name: allViewDonnerScreen, page: () => AllViewDonnerScreen()),
+    GetPage(name: donateThisOrgScreen, page: () => DonateThisOrgScreen()),
+    GetPage(name: paymentScreen, page: () => PaymentScreen()),
+   // GetPage(name: customNavbarTwo, page: () => CustomNavbarTwo()),
 
 
 

@@ -183,7 +183,7 @@ class CustomDonateRequestWidget extends StatelessWidget {
                 TextButton(
                     onPressed: () {},
                     child: CustomText(
-                        text: "Share",
+                        text: "Delete",
                         color: AppColros.grey,
                         fontSize: 18,
                         fontWeight: FontWeight.w500)),

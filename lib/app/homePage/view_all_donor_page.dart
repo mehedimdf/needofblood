@@ -4,11 +4,9 @@ import 'package:need_of_blood/app/widgets/custom_list_widget.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
 class ViewAllDonorPage extends StatefulWidget {
   const ViewAllDonorPage({super.key});
-
   @override
   State<ViewAllDonorPage> createState() => _ViewAllDonorPageState();
 }
-
 class _ViewAllDonorPageState extends State<ViewAllDonorPage> {
   List<bool> isSelected = List.generate(10, (index) => false);
   @override

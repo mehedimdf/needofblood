@@ -11,7 +11,7 @@ class   AppStrings {
   ///====================== Onboarding Strings =========================
   static const String loginOrSignUp = "Login or Sign Up";
   static const String login = "Login";
-  static const String donateGraph = "Donate Graph";
+  static const String donateGraph = "View Graph";
   static const String findDonors = "Find Donors";
   static const String requestBlood = "Request";
   static const String graphChart = "Graph Chart";
@@ -23,6 +23,7 @@ class   AppStrings {
   static const String needOfBloodInfo = "Need of Blood Info";
   static const String createDonateInfo = "Create Donate Info";
   static const String viewAllDonors = "View All Donors";
+  static const String donateThisOrganization = "Donate This";
 
 
 }

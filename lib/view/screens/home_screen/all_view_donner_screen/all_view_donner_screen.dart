@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:need_of_blood/common/app_colors/appColors.dart';
 import 'package:need_of_blood/utils/app_strings/app_strings.dart';
 import 'package:need_of_blood/view/components/custom_royel_appbar/custom_royel_appbar.dart';
-import 'package:need_of_blood/view/components/custom_text/custom_text.dart';
 import 'package:need_of_blood/view/components/nav_bar/nav_bar.dart';
 import 'package:need_of_blood/view/screens/home_screen/inner_widget/custom_list_widget.dart';
 class AllViewDonnerScreen extends StatefulWidget {
