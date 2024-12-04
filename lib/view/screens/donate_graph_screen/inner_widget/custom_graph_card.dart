@@ -15,11 +15,19 @@ class CustomGraphCard extends StatelessWidget {
     return  Padding(
       padding: EdgeInsets.only(right: 10),
       child: Container(
-        padding: EdgeInsets.all(16),
-        //height: 120,
-       // width: 120,
+       // padding: EdgeInsets.all(16),
+        height: 100,
+        width: 100,
         decoration: BoxDecoration(
           color: color,
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(1.0, 1.0),
+              spreadRadius: 4.0,
+              blurRadius: 4.0,
+              color: AppColors.white,
+            ),
+          ],
           borderRadius: BorderRadius.circular(20),
         ),
         child: Column(

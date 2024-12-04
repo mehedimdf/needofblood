@@ -56,9 +56,8 @@ class _FindDonorsScreenState extends State<AllViewDonnerScreen> {
                       padding:const EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(
                         border: Border.all(color: AppColros.white, width: .7),
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(15),
-                          bottomRight: Radius.circular(15),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(13),
                         ),
                       ),
                       child: DropdownButton<String>(

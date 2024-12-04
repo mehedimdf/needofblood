@@ -50,13 +50,13 @@ class _DonateGraphScreenState extends State<DonateGraphScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColros.white,
+    //  backgroundColor: AppColros.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
               //height: 180,
-              height: MediaQuery.of(context).size.height / 5.5,
+              height: MediaQuery.of(context).size.height / 6,
               width: MediaQuery.of(context).size.width,
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
@@ -76,7 +76,7 @@ class _DonateGraphScreenState extends State<DonateGraphScreen> {
                 ],
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 10,),
             CarouselSlider(
               options: CarouselOptions(
                   autoPlay: true,
@@ -104,7 +104,7 @@ class _DonateGraphScreenState extends State<DonateGraphScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const CustomText(
-                      text: "Our Contribution",
+                      text: "Activities",
                       color: Colors.grey,
                       fontSize: 20,
                       fontWeight: FontWeight.w500),
@@ -112,7 +112,7 @@ class _DonateGraphScreenState extends State<DonateGraphScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
+              padding: const EdgeInsets.only(top: 20, left: 10, right: 0),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -140,70 +140,6 @@ class _DonateGraphScreenState extends State<DonateGraphScreen> {
                       countColor: AppColros.orange,
                       titleColor: AppColros.grey,
                     ),
-                    /*   Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: AppColros.skbluelight,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: InkWell(
-                        onTap: () {
-                          //Navigator.push(context, MaterialPageRoute(builder: (context) =>const FindDonorsPage()));
-                        },
-                        child: const Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CustomText(
-                                text: "1.5k+",
-                                color: AppColros.skblue,
-                                fontSize: 32,
-                                fontWeight: FontWeight.w500),
-                            SizedBox(
-                              height: 2,
-                            ),
-                            CustomText(
-                                text: "Blood Donner",
-                                color: AppColros.grey,
-                                fontSize: 15,
-                                fontWeight: FontWeight.w500),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Container(
-                      height: 120,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: AppColros.orangelight,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: InkWell(
-                        onTap: () {
-                          //Navigator.push(context, MaterialPageRoute(builder: (context) =>const FindDonorsPage()));
-                        },
-                        child: const Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CustomText(
-                                text: "1k+",
-                                color: AppColros.orange,
-                                fontSize: 32,
-                                fontWeight: FontWeight.w500),
-                            SizedBox(
-                              height: 2,
-                            ),
-                            CustomText(
-                                text: "Receive Blood",
-                                color: AppColros.grey,
-                                fontSize: 15,
-                                fontWeight: FontWeight.w500),
-                          ],
-                        ),
-                      ),
-                    ),*/
                   ],
                 ),
               ),

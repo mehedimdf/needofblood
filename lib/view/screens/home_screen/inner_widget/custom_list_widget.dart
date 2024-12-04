@@ -16,6 +16,7 @@ class CustomListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return GestureDetector(
       onTap: (){
         Get.toNamed(AppRoutes.userProfileScreen);
@@ -153,7 +154,9 @@ class CustomListWidget extends StatelessWidget {
                         bottom: 10.h,
                       ),
                       IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+
+                          },
                           icon: CustomImage(
                             imageSrc: AppIcons.call_icon,
                             height: 40,

@@ -16,7 +16,7 @@ class   AppStrings {
   static const String requestBlood = "Request";
   static const String graphChart = "Graph Chart";
   static const String myProfile = "My Profile";
-  static const String userProfile = "User Profile";
+  static const String userProfile = "Donor Profile";
   static const String notification = "Notification";
   static const String accountInfo = "Account Info";
   static const String changePassword = "Change Password";

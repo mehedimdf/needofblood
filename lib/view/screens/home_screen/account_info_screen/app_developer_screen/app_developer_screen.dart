@@ -348,7 +348,7 @@ class AppDeveloperScreen extends StatelessWidget {
                       ),
                       elevation: 10,
                       child: Container(
-                        height: 47,
+                        height: 47,`
                         width: 47,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
